@@ -156,3 +156,4 @@ C:\Users\aytac\OneDrive\Documents\Projects\Hotel\Hotel\obj\Debug\net5.0\ref\Hote
 C:\Users\aytac\OneDrive\Documents\Projects\Hotel\Hotel\obj\Debug\net5.0\Hotel.pdb
 C:\Users\aytac\OneDrive\Documents\Projects\Hotel\Hotel\obj\Debug\net5.0\Hotel.genruntimeconfig.cache
 C:\Users\aytac\OneDrive\Documents\Projects\Hotel\Hotel\obj\Debug\net5.0\Hotel.csproj.AssemblyReference.cache
+C:\Users\aytac\OneDrive\Documents\Projects\Hotel\Hotel\obj\Debug\net5.0\Razor\Views\Shared\Components\Footer\Default.cshtml.g.cs

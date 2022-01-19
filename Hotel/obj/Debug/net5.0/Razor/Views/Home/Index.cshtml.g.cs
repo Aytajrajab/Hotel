@@ -21,13 +21,20 @@ using Hotel;
 #nullable disable
 #nullable restore
 #line 2 "C:\Users\aytac\OneDrive\Documents\Projects\Hotel\Hotel\Views\_ViewImports.cshtml"
+using Hotel.Models.Entity;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "C:\Users\aytac\OneDrive\Documents\Projects\Hotel\Hotel\Views\_ViewImports.cshtml"
 using Hotel.Models.ViewModels;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a8a3237b49a605539b758a3d3710d7338ce78992", @"/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d0a992d7c7af70a78ed56cdfecce4a7a9ebd7481", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"003a1fffc29e837195f05b24fa67211b5bbd5b50", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("value", "1", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -102,7 +109,7 @@ using Hotel.Models.ViewModels;
 						</div>
 						<div class=""");
             WriteLiteral("hotel-book-form hotel-book-form-2\">\r\n\t\t\t\t\t\t\t");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8a3237b49a605539b758a3d3710d7338ce789925851", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8a3237b49a605539b758a3d3710d7338ce789926040", async() => {
                 WriteLiteral(@"
 								<div class=""row align-items-center"">
 									<div class=""col-12 col-lg-3"">
@@ -137,7 +144,7 @@ using Hotel.Models.ViewModels;
 									</div>
 									<div class=""col-6 col-lg-3"">");
                 WriteLiteral("\n\t\t\t\t\t\t\t\t\t\t<div class=\"hotel-select-frame\">\r\n\t\t\t\t\t\t\t\t\t\t\t<label for=\"person\">Böyük</label>\r\n\t\t\t\t\t\t\t\t\t\t\t<select id=\"person\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8a3237b49a605539b758a3d3710d7338ce789927404", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8a3237b49a605539b758a3d3710d7338ce789927593", async() => {
                     WriteLiteral("1");
                 }
                 );
@@ -153,7 +160,7 @@ using Hotel.Models.ViewModels;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n\t\t\t\t\t\t\t\t\t\t\t\t");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8a3237b49a605539b758a3d3710d7338ce789928646", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8a3237b49a605539b758a3d3710d7338ce789928835", async() => {
                     WriteLiteral("2");
                 }
                 );
@@ -169,7 +176,7 @@ using Hotel.Models.ViewModels;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n\t\t\t\t\t\t\t\t\t\t\t\t");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8a3237b49a605539b758a3d3710d7338ce789929888", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8a3237b49a605539b758a3d3710d7338ce7899210077", async() => {
                     WriteLiteral("3");
                 }
                 );
@@ -185,7 +192,7 @@ using Hotel.Models.ViewModels;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n\t\t\t\t\t\t\t\t\t\t\t\t");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8a3237b49a605539b758a3d3710d7338ce7899211130", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8a3237b49a605539b758a3d3710d7338ce7899211320", async() => {
                     WriteLiteral("4");
                 }
                 );
@@ -204,7 +211,7 @@ using Hotel.Models.ViewModels;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n\t\t\t\t\t\t\t\t\t\t\t</select>\r\n\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"col-6 col-lg-2\">\r\n\t\t\t\t\t\t\t\t\t\t<div class=\"hotel-select-frame\">\r\n\t\t\t\t\t\t\t\t\t\t\t<label for=\"children\">Uşaq</label>\r\n\t\t\t\t\t\t\t\t\t\t\t<select id=\"children\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8a3237b49a605539b758a3d3710d7338ce7899213011", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8a3237b49a605539b758a3d3710d7338ce7899213201", async() => {
                     WriteLiteral("0");
                 }
                 );
@@ -220,7 +227,7 @@ using Hotel.Models.ViewModels;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n\t\t\t\t\t\t\t\t\t\t\t\t");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8a3237b49a605539b758a3d3710d7338ce7899214254", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8a3237b49a605539b758a3d3710d7338ce7899214444", async() => {
                     WriteLiteral("1");
                 }
                 );
@@ -236,7 +243,7 @@ using Hotel.Models.ViewModels;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n\t\t\t\t\t\t\t\t\t\t\t\t");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8a3237b49a605539b758a3d3710d7338ce7899215497", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8a3237b49a605539b758a3d3710d7338ce7899215687", async() => {
                     WriteLiteral("2");
                 }
                 );
@@ -252,7 +259,7 @@ using Hotel.Models.ViewModels;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n\t\t\t\t\t\t\t\t\t\t\t\t");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8a3237b49a605539b758a3d3710d7338ce7899216740", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8a3237b49a605539b758a3d3710d7338ce7899216930", async() => {
                     WriteLiteral("3");
                 }
                 );
