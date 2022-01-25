@@ -2,12 +2,11 @@
 
 namespace Hotel.Controllers
 {
-    public class AboutController : Controller
+    public class RoomController : Controller
     {
         public IActionResult Index()
         {
             return View();
         }
-       
     }
 }

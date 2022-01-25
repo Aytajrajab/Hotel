@@ -2,7 +2,8 @@
 {
     public class TopBarSection : BaseEntity
     {
-        public string Image { get; set; }
-        public string Title { get; set; }
+        public string Name { get; set; }
+        public string Order { get; set; }
+        public string Controller { get; set; }
     }
 }

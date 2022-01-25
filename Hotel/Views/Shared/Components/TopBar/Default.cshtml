@@ -1,0 +1,46 @@
+﻿@model List<TopBarSection>
+<div class="hotel-top-bar">
+    <div class="container">
+        <div class="hotel-left-side">
+            <!-- logo -->
+            <a asp-controller="Home" asp-action="Index" class="hotel-logo-frame" style="width: 50px;">
+                <img src="~/assets/img/hotellogo.png" alt="logo">
+            </a>
+            <!-- logo end -->
+        </div>
+        <div class="hotel-right-side">
+            <!-- menu -->
+        <div class="hotel-menu">
+					  <nav>
+						<ul>
+						  <li class="current-item">
+							<a asp-controller="Home" asp-action="Index">Ana Səhifə</a>
+						  </li>
+						  @foreach (var nav in Model)
+						 {
+							 <li class="@(ViewContext.RouteData.Values["Controller"].ToString()==$"{nav.Controller}"?"current-item":"")">
+                                <a asp-controller="@nav.Controller" asp-action="Index">@nav.Name</a>
+                            </li>
+						 }
+						  
+						</ul>
+					  </nav>
+					</div>
+					<!-- menu end -->
+            <!-- action button -->
+            @if (User.Identity.IsAuthenticated)
+            {
+                <a asp-action="LogOut" class="hotel-btn" asp-controller="Account">@User.Identity.Name</a>
+            }
+            else
+            {
+                <a asp-controller="Account" asp-action="Login" class="hotel-btn"><img src="~/assets/img/icons/bookmark.svg" alt="icon">Giriş</a>
+            }
+
+            <!-- action button end -->
+        </div>
+        <!-- menu button -->
+        <div class="hotel-menu-btn"><span></span></div>
+        <!-- menu button end -->
+    </div>
+</div>

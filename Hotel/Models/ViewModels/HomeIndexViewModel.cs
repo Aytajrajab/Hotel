@@ -6,11 +6,11 @@ namespace Hotel.Models.ViewModels
 {
     public class HomeIndexViewModel
     {
-        public ICollection<CommentSection> Comments { get; set; }
-        public ICollection<HotelInfo> HotelInfos { get; set; }
-        public ICollection<Room> Rooms { get; set; }
-        public ICollection<RoomImageSlider> RoomImages { get; set; }
-        public ICollection<Service> Services { get; set; }
-        public ICollection<Staff> Staffs { get; set; }
+        public List<CommentSection> Comments { get; set; }
+        public List<HotelInfo> HotelInfos { get; set; }
+        public List<Room> Rooms { get; set; }
+        public List<RoomImageSlider> RoomImages { get; set; }
+        public List<Service> Services { get; set; }
+        public List<Staff> Staffs { get; set; }
     }
 }

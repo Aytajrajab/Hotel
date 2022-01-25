@@ -42,5 +42,16 @@ namespace Hotel.Controllers
         }
 
         
+
+        public async Task<IActionResult> Contact()
+        {
+            return View();
+        }
+        public async Task<IActionResult> Service()
+        {
+            return View();
+        }
+
+
     }
 }

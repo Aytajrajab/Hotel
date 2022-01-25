@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Hotel.Models.Entity;
+using Microsoft.AspNetCore.Identity;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Hotel.Models
@@ -7,5 +9,6 @@ namespace Hotel.Models
     {
         [Required]
         public string FullName { get; set; }
+        public List<Booking> Bookings { get; set; }
     }
 }

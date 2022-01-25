@@ -157,3 +157,7 @@ C:\Users\aytac\OneDrive\Documents\Projects\Hotel\Hotel\obj\Debug\net5.0\Hotel.pd
 C:\Users\aytac\OneDrive\Documents\Projects\Hotel\Hotel\obj\Debug\net5.0\Hotel.genruntimeconfig.cache
 C:\Users\aytac\OneDrive\Documents\Projects\Hotel\Hotel\obj\Debug\net5.0\Hotel.csproj.AssemblyReference.cache
 C:\Users\aytac\OneDrive\Documents\Projects\Hotel\Hotel\obj\Debug\net5.0\Razor\Views\Shared\Components\Footer\Default.cshtml.g.cs
+C:\Users\aytac\OneDrive\Documents\Projects\Hotel\Hotel\obj\Debug\net5.0\Razor\Views\Home\About.cshtml.g.cs
+C:\Users\aytac\OneDrive\Documents\Projects\Hotel\Hotel\obj\Debug\net5.0\Razor\Views\Home\Contact.cshtml.g.cs
+C:\Users\aytac\OneDrive\Documents\Projects\Hotel\Hotel\obj\Debug\net5.0\Razor\Views\Home\Service.cshtml.g.cs
+C:\Users\aytac\OneDrive\Documents\Projects\Hotel\Hotel\obj\Debug\net5.0\Razor\Views\Shared\Components\TopBar\Default.cshtml.g.cs
