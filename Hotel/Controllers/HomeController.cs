@@ -24,8 +24,7 @@ namespace Hotel.Controllers
             List<CommentSection> comments = await _context.Comments.ToListAsync();
             List<HotelInfo> hotelInfos = await _context.HotelInfos.ToListAsync();
             List<Room> rooms = await _context.Rooms.ToListAsync();
-            List<RoomImageSlider> roomImgs = await _context.RoomImages.ToListAsync();
-            List<Service> services = await _context.Services.ToListAsync();
+            List<RoomImage> roomImgs = await _context.RoomImages.ToListAsync();
             List<Staff> staffs = await _context.Staffs.ToListAsync();
 
             HomeIndexViewModel model = new HomeIndexViewModel
@@ -33,24 +32,16 @@ namespace Hotel.Controllers
                 Comments = comments,
                 HotelInfos = hotelInfos,
                 Rooms = rooms,
-                Services = services,
                 Staffs = staffs,
                 RoomImages = roomImgs,
-
             };
             return View(model);
         }
 
         
 
-        public async Task<IActionResult> Contact()
-        {
-            return View();
-        }
-        public async Task<IActionResult> Service()
-        {
-            return View();
-        }
+        
+        
 
 
     }

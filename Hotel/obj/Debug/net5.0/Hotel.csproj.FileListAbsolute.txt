@@ -161,3 +161,9 @@ C:\Users\aytac\OneDrive\Documents\Projects\Hotel\Hotel\obj\Debug\net5.0\Razor\Vi
 C:\Users\aytac\OneDrive\Documents\Projects\Hotel\Hotel\obj\Debug\net5.0\Razor\Views\Home\Contact.cshtml.g.cs
 C:\Users\aytac\OneDrive\Documents\Projects\Hotel\Hotel\obj\Debug\net5.0\Razor\Views\Home\Service.cshtml.g.cs
 C:\Users\aytac\OneDrive\Documents\Projects\Hotel\Hotel\obj\Debug\net5.0\Razor\Views\Shared\Components\TopBar\Default.cshtml.g.cs
+C:\Users\aytac\OneDrive\Documents\Projects\Hotel\Hotel\obj\Debug\net5.0\Razor\Views\Hotel\Index.cshtml.g.cs
+C:\Users\aytac\OneDrive\Documents\Projects\Hotel\Hotel\obj\Debug\net5.0\Razor\Views\Hotel\Detail.cshtml.g.cs
+C:\Users\aytac\OneDrive\Documents\Projects\Hotel\Hotel\obj\Debug\net5.0\Razor\Views\Contact\Index.cshtml.g.cs
+C:\Users\aytac\OneDrive\Documents\Projects\Hotel\Hotel\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\aytac\OneDrive\Documents\Projects\Hotel\Hotel\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\aytac\OneDrive\Documents\Projects\Hotel\Hotel\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll

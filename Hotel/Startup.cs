@@ -36,6 +36,10 @@ namespace Hotel
                 options.ValidationInterval = TimeSpan.FromMinutes(0);
             });
 
+            services.AddControllersWithViews()
+              .AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling
+              = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+
             services.AddControllersWithViews();
             services.AddIdentity<User, IdentityRole>(options =>
             {

@@ -11,8 +11,8 @@ namespace Hotel.Models.Entity
         public double Area { get; set; }
         public int Quantity { get; set; }
         public bool Availabilities { get; set; }
-        public Room RoomId { get; set; }
-        public HotelInfo HotelId { get; set; }
-        public ICollection<Booking> Bookings { get; set; }
+        public HotelInfo HotelInfo { get; set; }
+        public int HotelId { get; set; }
+        public ICollection<RoomImage> Images { get; set; }
     }
 }
