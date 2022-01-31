@@ -1,6 +1,8 @@
-﻿@{
+﻿@model HomeIndexViewModel 
+@{
     ViewData["Title"] = "Index";
 }
+
 
 
 <!-- banner -->
@@ -75,86 +77,20 @@
                 </div>
 
             </div>
-            <div class="col-lg-3" data-aos="zoom-in" data-aos-duration="3000">
+            @foreach (var item in Model.Services)
+           {
+               <div class="col-lg-3" data-aos="zoom-in" data-aos-duration="3000">
 
                 <!-- icon box -->
                 <div class="hotel-icon-box hotel-scroll-animation imgLoad">
-                    <img class="lozad" data-src="img/features/1.svg" alt="icon" class="hotel-mb-10">
-                    <h5>Havayolu transferi</h5>
+                    <img class="lozad hotel-mb-10" data-src="img/features/@item.Image" alt="icon">
+                    <h5>@item.Title</h5>
                 </div>
                 <!-- icon box end -->
 
             </div>
-            <div class="col-lg-3" data-aos="zoom-in" data-aos-duration="3000">
-
-                <!-- icon box -->
-                <div class="hotel-icon-box hotel-scroll-animation imgLoad">
-                    <img class="lozad" data-src="img/features/2.svg" alt="icon" class="hotel-mb-10">
-                    <h5>Hər şey daxildir</h5>
-                </div>
-                <!-- icon box end -->
-
-            </div>
-            <div class="col-lg-3" data-aos="zoom-in" data-aos-duration="3000">
-
-                <!-- icon box -->
-                <div class="hotel-icon-box hotel-scroll-animation imgLoad">
-                    <img class="lozad" data-src="img/features/3.svg" alt="icon" class="hotel-mb-10">
-                    <h5>Kondisioner</h5>
-                </div>
-                <!-- icon box end -->
-
-            </div>
-            <div class="col-lg-3" data-aos="zoom-in" data-aos-duration="3000">
-
-                <!-- icon box -->
-                <div class="hotel-icon-box hotel-scroll-animation imgLoad">
-                    <img class="lozad" data-src="img/features/4.svg" alt="icon" class="hotel-mb-10">
-                    <h5>Təhlükəsizlik</h5>
-                </div>
-                <!-- icon box end -->
-
-            </div>
-            <div class="col-lg-3 " data-aos="zoom-in" data-aos-duration="3000">
-
-                <!-- icon box -->
-                <div class="hotel-icon-box hotel-scroll-animation imgLoad">
-                    <img class="lozad" data-src="img/features/5.svg" alt="icon" class="hotel-mb-10">
-                    <h5>Hovuz</h5>
-                </div>
-                <!-- icon box end -->
-
-            </div>
-            <div class="col-lg-3" data-aos="zoom-in" data-aos-duration="3000">
-
-                <!-- icon box -->
-                <div class="hotel-icon-box hotel-scroll-animation imgLoad">
-                    <img class="lozad" data-src="img/features/6.svg" alt="icon" class="hotel-mb-10">
-                    <h5>Wi-fi</h5>
-                </div>
-                <!-- icon box end -->
-
-            </div>
-            <div class="col-lg-3" data-aos="zoom-in" data-aos-duration="3000">
-
-                <!-- icon box -->
-                <div class="hotel-icon-box hotel-scroll-animation imgLoad">
-                    <img class="lozad" data-src="img/features/7.svg" alt="icon" class="hotel-mb-10">
-                    <h5>Smart TV</h5>
-                </div>
-                <!-- icon box end -->
-
-            </div>
-            <div class="col-lg-3" data-aos="zoom-in" data-aos-duration="3000">
-
-                <!-- icon box -->
-                <div class="hotel-icon-box hotel-scroll-animation imgLoad">
-                    <img class="lozad" data-src="img/features/8.svg" alt="icon" class="hotel-mb-10">
-                    <h5>Çamaşırxana</h5>
-                </div>
-                <!-- icon box end -->
-
-            </div>
+           }
+            
         </div>
     </div>
 </section>
@@ -171,7 +107,7 @@
                         <div class="hotel-title-frame imgLoad" data-aos="fade-right" data-aos-duration="3000">
                             <h2 class="hotel-mb-20">İnanılmaz macəranıza başlayın!</h2>
                             <p class="hotel-mb-30">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, obcaecati consequuntur. Cum, asperiores? Quia, cupiditate. Laudantium pariatur ab nostrum repudiandae.</p>
-                            <a data-fancybox href="https://www.youtube.com/watch?v=wsq-r8lMMsk" class="hotel-btn hotel-btn-md"><img class="lozad" data-src="img/icons/play.svg" alt="icon" class="hotel-zoom">İzlə</a>
+                            <a data-fancybox href="https://www.youtube.com/watch?v=wsq-r8lMMsk" class="hotel-btn hotel-btn-md"><img class="lozad hotel-zoom" data-src="img/icons/play.svg" alt="icon">İzlə</a>
                         </div>
                     </div>
                 </div>
@@ -201,15 +137,17 @@
                 </div>
 
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
+            @foreach (var item in Model.Staffs)
+           {
+               <div class="col-12 col-md-6 col-lg-3">
 
                 <div class="hotel-team-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
                     <div class="hotel-photo-frame imgLoad">
-                        <img class="lozad" data-src="img/team/1.jpg" alt="face">
+                        <img class="lozad" data-src="img/team/@item.Image" alt="face">
                     </div>
                     <div class="hotel-team-member-descr">
-                        <h3 class="hotel-mb-10">Elnur İsamyilov</h3>
-                        <div>Baş Rəhbər</div>
+                        <h3 class="hotel-mb-10">@item.FullName</h3>
+                        <div>@item.Position</div>
                         <ul class="hotel-member-social">
                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
@@ -220,64 +158,11 @@
                 </div>
 
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
-
-                <div class="hotel-team-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1800">
-                    <div class="hotel-photo-frame imgLoad">
-                        <img class="lozad" data-src="img/team/2.jpg" alt="face">
-                    </div>
-                    <div class="hotel-team-member-descr">
-                        <h3 class="hotel-mb-10">Aydın Kazımov</h3>
-                        <div>Müdür</div>
-                        <ul class="hotel-member-social">
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-12 col-md-6 col-lg-3">
-
-                <div class="hotel-team-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2100">
-                    <div class="hotel-photo-frame imgLoad">
-                        <img class="lozad" data-src="img/team/3.jpg" alt="face">
-                    </div>
-                    <div class="hotel-team-member-descr">
-                        <h3 class="hotel-mb-10">Aylin Rəhimova</h3>
-                        <div>Administrator</div>
-                        <ul class="hotel-member-social">
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-12 col-md-6 col-lg-3">
-
-                <div class="hotel-team-card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2400">
-                    <div class="hotel-photo-frame imgLoad">
-                        <img class="lozad" data-src="img/team/4.jpg" alt="face">
-                    </div>
-                    <div class="hotel-team-member-descr">
-                        <h3 class="hotel-mb-10">Fuad Ələkbərov</h3>
-                        <div>Tur Rəhbəri</div>
-                        <ul class="hotel-member-social">
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
+           }
+            
+            
         </div>
     </div>
 </section>
 <!-- team end -->
+

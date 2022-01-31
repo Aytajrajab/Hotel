@@ -1,4 +1,4 @@
-﻿@model LoginViewModel
+﻿@model RegisterAndLoginViewModel
 @{
     Layout = null;
 }
@@ -38,14 +38,40 @@
                     <div class="formBox">
                         <form asp-action="Login" method="post">
                             <h2>Giriş</h2>
-                            <input type="email" asp-for="Email" placeholder="Email">
-                            <input type="password" asp-for="Password" placeholder="Şifrə">
-                            <input asp-for="Persistent"/><label asp-for="Persistent">Keep me signed</label>
+                            <input type="email" asp-for="LoginViewModel.Email" placeholder="Email">
+                            <input type="password" asp-for="LoginViewModel.Password" placeholder="Şifrə">
+                            <input asp-for="LoginViewModel.Persistent"/><label asp-for="LoginViewModel.Persistent">Keep me signed</label>
                             <input type="submit" value="Giriş">
-                <p class="signup">Hesabınız yoxdur? O zaman <a asp-controller="Account" asp-action="Register">Qedyiyyatdan keçin</a></p>
+                            <p class="signup">Hesabınız yoxdur? O zaman <a href="#" onclick="toggleForm();">Qedyiyyatdan keçin</a></p>
                         </form>
                     </div>
                 </div> 
+
+                <div class="user signupBox">
+                    <div class="formBox">
+                        <div asp-validation-summary="All"></div>
+                        <form method="post" asp-controller="Account" asp-action="Register">
+                            <h2>Hesab aç</h2>
+                            <input asp-for="RegisterViewModel.UserName" placeholder="Username">
+                            <span class="text-danger" asp-validation-for="RegisterViewModel.UserName"></span>
+
+                            <input asp-for="RegisterViewModel.FullName" placeholder="FullName">
+                            <span class="text-danger" asp-validation-for="RegisterViewModel.FullName"></span>
+
+                            <input asp-for="RegisterViewModel.Email" placeholder="Email">
+                            <span class="text-danger" asp-validation-for="RegisterViewModel.Email"></span>
+
+                            <input asp-for="RegisterViewModel.Password" placeholder="Password">
+                            <span class="text-danger" asp-validation-for="RegisterViewModel.Password"></span>
+
+                            <input asp-for="RegisterViewModel.ConfirmPassword" placeholder="Confirm password">
+                            <span class="text-danger" asp-validation-for="RegisterViewModel.ConfirmPassword"></span>
+
+                            <button class="btn btn-primary" type="submit">Qeydiyyatdan keç</button>
+                        </form>
+                    </div>
+                    <div class="imgBox"><img src="~/assets/img/rooms/1.jpg" alt=""></div>
+                </div>
             </div>
            </section>
 
@@ -54,7 +80,18 @@
 
 
     
-  
+  <script>
+
+
+    function toggleForm(){
+    section = document.querySelector('section');
+    container = document.querySelector('.container');
+    container.classList.toggle('active');
+    section.classList.toggle('active');
+    }
+
+    
+</script>
 
 
 

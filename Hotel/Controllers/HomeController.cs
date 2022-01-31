@@ -25,14 +25,13 @@ namespace Hotel.Controllers
             List<HotelInfo> hotelInfos = await _context.HotelInfos.ToListAsync();
             List<Room> rooms = await _context.Rooms.ToListAsync();
             List<RoomImage> roomImgs = await _context.RoomImages.ToListAsync();
-            List<Staff> staffs = await _context.Staffs.ToListAsync();
+            
 
             HomeIndexViewModel model = new HomeIndexViewModel
             {
                 Comments = comments,
                 HotelInfos = hotelInfos,
                 Rooms = rooms,
-                Staffs = staffs,
                 RoomImages = roomImgs,
             };
             return View(model);

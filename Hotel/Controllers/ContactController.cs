@@ -17,8 +17,11 @@ namespace Hotel.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            var contact = await _context.Contacts.Where(c => !c.IsDeleted).ToListAsync();
-            return View(contact);
+            ContactViewModel contactViewModel = new ContactViewModel()
+            {
+                Contacts = await _context.Contacts.Where(c => !c.IsDeleted).ToListAsync()
+            };
+            return View(contactViewModel);
         }
 
         [HttpPost]
@@ -39,7 +42,7 @@ namespace Hotel.Controllers
             await _context.Messages.AddAsync(message);
             await _context.SaveChangesAsync();
 
-            return View(message);
+            return RedirectToAction(nameof(Index));
         }
     }
 }

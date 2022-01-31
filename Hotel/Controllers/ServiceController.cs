@@ -13,7 +13,7 @@ namespace Hotel.Controllers
         {
             _context = context;
         }
-        public async Task<IActionResult> Service()
+        public async Task<IActionResult> Index()
         {
             var service = await _context.Services.Where(s => !s.IsDeleted).ToListAsync();
             return View(service);

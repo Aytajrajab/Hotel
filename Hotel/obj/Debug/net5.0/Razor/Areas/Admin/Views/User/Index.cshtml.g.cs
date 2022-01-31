@@ -19,8 +19,15 @@ using Hotel.Areas.Admin.ViewModels;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "C:\Users\aytac\OneDrive\Documents\Projects\Hotel\Hotel\Areas\Admin\Views\_ViewImports.cshtml"
+using Hotel.Models.Entity;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"56eaa24470cad41eddf7dea79694cee060904f18", @"/Areas/Admin/Views/User/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f5094caad09b1b06e550b439cd6facd949f4e82b", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"edc6567bad67ce2ae75166bab5e2c0f882b87536", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     public class Areas_Admin_Views_User_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<UserViewModel>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("btn btn-warning"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -107,7 +114,7 @@ using Hotel.Areas.Admin.ViewModels;
 #line hidden
 #nullable disable
             WriteLiteral("<td>\r\n                            <a class=\"btn btn-primary\">Update</a>\r\n                            <a class=\"btn btn-danger\">Delete</a>\r\n                            <a class=\"btn btn-warning\">Detail</a>\r\n                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "56eaa24470cad41eddf7dea79694cee060904f186302", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "56eaa24470cad41eddf7dea79694cee060904f186503", async() => {
                 WriteLiteral("Add Role");
             }
             );
@@ -139,7 +146,7 @@ using Hotel.Areas.Admin.ViewModels;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "56eaa24470cad41eddf7dea79694cee060904f188614", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "56eaa24470cad41eddf7dea79694cee060904f188815", async() => {
                 WriteLiteral("Change Password");
             }
             );
@@ -171,7 +178,7 @@ using Hotel.Areas.Admin.ViewModels;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "56eaa24470cad41eddf7dea79694cee060904f1810940", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "56eaa24470cad41eddf7dea79694cee060904f1811141", async() => {
                 WriteLiteral("Block User");
             }
             );

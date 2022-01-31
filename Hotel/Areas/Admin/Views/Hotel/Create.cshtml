@@ -1,0 +1,44 @@
+﻿@model HotelCreateViewModel
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="content-wrapper">
+    <div class="row">
+    <div class="col-md-6 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Default form</h4>
+                <p class="card-description">
+                    Create Category
+                </p>
+                <form class="forms-sample" method="post" asp-action="Create" enctype="multipart/form-data">
+
+                    <div class="form-group">
+                        <label asp-for="Name">Name</label>
+                        <input class="form-control" asp-for="Name" id="exampleInputUsername1" placeholder="Name">
+                        <span asp-validation-for="Name"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Description">Description</label>
+                        <textarea class="form-control" asp-for="Description" id="description" placeholder="Description"></textarea>
+                        <span asp-validation-for="Description"></span>
+                    </div>
+                    <div class="form-group" id="FileInput">
+                        <label asp-for="Files">Image</label>
+                        <input class="form-control" asp-for="Files" accept="images/*" placeholder="Files">
+                        <span class="text-danger" asp-validation-for="Files"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary me-2" asp-controller="Hotel" asp-action="Create">Submit</button>
+                    <button class="btn btn-light" asp-controller="Hotel" asp-action="Index">Cancel</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+

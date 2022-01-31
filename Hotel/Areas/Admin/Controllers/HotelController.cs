@@ -158,5 +158,33 @@ namespace Hotel.Areas.Admin.Controllers
             FileUtils.FileDelete(path);
             return RedirectToAction(nameof(Index));
         }
+
+        public async Task<IActionResult> Delete(int id)
+        {
+            HotelInfo hotel = await _context.HotelInfos.FirstOrDefaultAsync(h=>h.Id==id && !h.IsDeleted);
+
+            if (hotel == null)
+            {
+                return NotFound();
+            }
+
+            return View(hotel);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteHotel(int id)
+        {
+            HotelInfo hotel = await _context.HotelInfos.FirstOrDefaultAsync(h => h.Id == id && !h.IsDeleted);
+
+            if (hotel == null)
+            {
+                return NotFound();
+            }
+
+            hotel.IsDeleted = true;
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
     }
 }

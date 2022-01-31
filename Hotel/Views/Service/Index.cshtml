@@ -1,0 +1,42 @@
+﻿@model List<Service>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!-- services -->
+    <section class="hotel-p-0-80 service">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+
+            <div class="hotel-center hotel-title-frame hotel-scroll-animation hotel-mb-100">
+              <h2 class="hotel-mb-20">Bütün Xidmətlərimiz</h2>
+              <p class="hotel-mb-30">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, culpa quasi facilis adipisci id atque tempora, nobis omnis tempore ea aspernatur sunt doloribus et rerum cumque hic ullam rem ad.</p>
+            </div>
+
+          </div>
+          @foreach (var service in Model)
+         {
+             <div class="col-lg-4">
+
+            <!-- service card -->
+            <div class="hotel-ath-card hotel-scroll-animation imgLoad">
+              <div class="hotel-cover-frame">
+                <img class="lozad" data-src="img/services/@service.Image" alt="cover">
+              </div>
+              <div class="hotel-card-description">
+                <h3 class="hotel-mb-10">@service.Title</h3>
+                <p>@service.Description</p>
+              </div>
+            </div>
+            <!-- service card end -->
+
+          </div>
+         }
+          
+        </div>
+      </div>
+    </section>
+    <!-- services end -->
+
+

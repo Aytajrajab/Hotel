@@ -25,5 +25,6 @@ namespace Hotel.DAL
         public DbSet<Footer> Footers { get; set; }
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<Message> Messages { get; set; }
+        public DbSet<RoomCategory> RoomCategories { get; set;}
     }
 }

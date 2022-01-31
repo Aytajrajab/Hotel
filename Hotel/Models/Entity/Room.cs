@@ -13,6 +13,9 @@ namespace Hotel.Models.Entity
         public bool Availabilities { get; set; }
         public HotelInfo HotelInfo { get; set; }
         public int HotelId { get; set; }
+        public RoomCategory RoomCategory { get; set; }
+        public int? RoomCategoryId { get; set; }
         public ICollection<RoomImage> Images { get; set; }
+        
     }
 }

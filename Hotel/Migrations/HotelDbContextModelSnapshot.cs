@@ -56,6 +56,9 @@ namespace Hotel.Migrations
                     b.Property<bool>("Paid")
                         .HasColumnType("bit");
 
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
                     b.Property<int?>("RoomId")
                         .HasColumnType("int");
 
@@ -386,11 +389,40 @@ namespace Hotel.Migrations
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
+                    b.Property<int?>("RoomCategoryId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("HotelInfoId");
 
+                    b.HasIndex("RoomCategoryId");
+
                     b.ToTable("Rooms");
+                });
+
+            modelBuilder.Entity("Hotel.Models.Entity.RoomCategory", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("RoomCategories");
                 });
 
             modelBuilder.Entity("Hotel.Models.Entity.RoomImage", b =>
@@ -466,6 +498,9 @@ namespace Hotel.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("FullName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Image")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDeleted")
@@ -784,7 +819,13 @@ namespace Hotel.Migrations
                         .WithMany("Rooms")
                         .HasForeignKey("HotelInfoId");
 
+                    b.HasOne("Hotel.Models.Entity.RoomCategory", "RoomCategory")
+                        .WithMany()
+                        .HasForeignKey("RoomCategoryId");
+
                     b.Navigation("HotelInfo");
+
+                    b.Navigation("RoomCategory");
                 });
 
             modelBuilder.Entity("Hotel.Models.Entity.RoomImage", b =>

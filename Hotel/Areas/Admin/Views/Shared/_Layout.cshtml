@@ -309,8 +309,8 @@
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" asp-controller="Hotel" asp-action="Detail">Details</a></li>
-                <li class="nav-item"> <a class="nav-link" asp-controller="Hotel" asp-action="Create">Create</a></li>
+                <li class="nav-item"> <a class="nav-link" asp-controller="Hotel" asp-action="Index">Hotels List</a></li>
+                <li class="nav-item"> <a class="nav-link" asp-controller="Hotel" asp-action="Create">New Hotel</a></li>
               </ul>
             </div>
           </li>
@@ -424,6 +424,8 @@
   <!-- Custom js for this page-->
   <script src="~/template/js/dashboard.js"></script>
   <script src="~/template/js/Chart.roundedBarCharts.js"></script>
+  @await RenderSectionAsync("Scripts", required: false)
+
   <!-- End custom js for this page-->
 </body>
 
